@@ -18,7 +18,7 @@ from django.urls import path
 from django.conf.urls import include,url
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('student.urls')),
+    path('admin/', admin.site.urls), # kalau http://127.0.0.1/admin, dia akan masuk site admin
+    path('', include('student.urls')), # kalau http://127.0.0.1, dia akan masuk student
 ]
 
